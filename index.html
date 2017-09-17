@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <form>
+            <input class="firstButton" type="button" value="Button" onClick='location.href="table.html"'>
+        </form>
+    </nav>
+    <aside></aside>
+    <article>
+        <form method="POST" action="https://formspree.io/marichkanester@gmail.com">
+            <label class="margin20" for="name">Name:</label>
+            <br>
+            <input class="margin20" type="name" name="name" id="name" placeholder="Your name" required />
+            <br>
+            <label class="margin20" for="email">Email:</label>
+            <br>
+            <input class="margin20" type="email" name="email" id="email" placeholder="Your email" required/>
+            <br>
+            <label class="margin20" for="password">Password: </label>
+            <br>
+            <input class="margin20" type="password" name="password" id="password" required placeholder="Your password" />
+            <br>
+            <lable class="margin20">Gender</lable>
+            <input type="radio" name="gender" value="Male" checked/>Male
+            <input type="radio" name="gender" value="Female" />Female
+            <input type="radio" name="gender" value="Other" />Other
+            <br>
+            <lable class="margin20" for="country">Country:</lable>
+            <select id="country" name="country">
+                <option value="UA">UA</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="AU">AU</option>
+                <option value="BG">BG</option>
+                <option value="PL">PL</option>
+            </select>
+            <br>
+            <label class="margin20">Phone number:
+            <br>
+            <input class="margin20" type="tel" name="tel"/
+            required
+            pattern="+380[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+            placeholder="+380666666666"
+            title="+380666666666">
+            </label>
+            <br>
+            <label class="margin20">Your message:
+            <br>
+               <textarea class="margin20" placeholder="Some text"> </textarea>
+             </label>
+            <br>
+            <input type="submit" class="margin20" value="Send" />
+            <input type="reset" value="Reset" />
+
+        </form>
+        <section>
+            <form method="POST" enctype="multipart/form-data" action="https://formspree.io/marichkanester@gmail.com">
+                <p>How old are you:</p>
+                <p><input type="checkbox" name="age" value="0-3" />0-3</p>
+                <p><input type="checkbox" name="age" value="4-10" />4-10</p>
+                <p><input type="checkbox" name="age" value="11-20" />11-20</p>
+                <p><input type="checkbox" name="age" value="21-40" />21-40</p>
+                <p><input type="checkbox" name="age" value="41-60" />41-60</p>
+                <p><input type="checkbox" name="age" value="61+" />61+</p>
+                <br>
+                <label>Choose color:
+                <input type="color" name="color" value="#ff0000">
+                 </label>
+                <br>
+                <p>Mean nothing: <input type="range" min="1" max="50" id="size" oninput="sizePic()" value="3"></p>
+                <br>
+                <input type="month" name="month">
+                <br>
+                <input type="date" name="calendar" />
+                <br>
+                <input type="search" name="Search" placeholder="Search" />
+                <br>
+                <input class="send2" type="submit" class="margin20" value="Send" />
+            </form>
+        </section>
+    </article>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-color: Bisque;
+}
+.firstButton{
+     margin-left: 600px;
+    margin-right: 30px;
+    background:pink;
+    width: 70px;
+    height: 30px;
+    border-radius: 20%;
+}
+aside{
+    width: 20%;
+    float: left;
+    height: 1000px;
+}
+article{
+    height: 1000px;
+    width: 58%;
+    float:left;
+    background-color: white;
+    border-style: double;
+    border-color: grey;
+    border-radius: 20%;
+    margin-top:  50px;
+    
+}
+.margin20{
+         margin: 0 0 0% 20%;
+}
+section{
+    margin: 0 0 0% 15%;
+}
+.send2{
+    margin: 3% 0 0% 15%;
+}
