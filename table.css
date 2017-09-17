@@ -81,3 +81,7 @@ td{
     float: left;
     margin: 0 20% 0 20%;
 }
+table, td, th { border: 1px solid black }
+h3{
+    text-align: center;
+}
